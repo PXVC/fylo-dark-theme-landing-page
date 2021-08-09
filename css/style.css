@@ -27,6 +27,10 @@ p {
     transition: all .2s ease;
 }
 
+::placeholder {
+    color: rgb(201, 201, 201);
+}
+
 /* ! ========== Header ========== ! */
 
 header {
@@ -141,15 +145,19 @@ header {
 /* ! ========== Stay productive section ========== ! */
 
 .desktop-productive {
-    width: 450px;
-    margin-top: 80px;
-    margin-left: -433px;
+    width: 550px;
+    margin-top: 100px;
+    margin-left: -533px;
+}
+
+.mobile-productive {
+    display: none;
 }
 
 .intro-title.section {
     float: right;
     text-align: left;
-    margin-top: -251px;
+    margin-top: -301px;
     margin-right: 240px;
     width: 238px;
 }
@@ -158,11 +166,11 @@ header {
     float: right;
     text-align: left;
     width: 477px;
-    margin-top: -160px
+    margin-top: -190px
 }
 
 .intro-content.section.second  {
-    margin-top: -85px;
+    margin-top: -105px;
 }
 
 .for-more {
@@ -239,7 +247,11 @@ cite img {
     z-index: -1;
 }
 
-/* ! ========== Enter email section ========== ! */
+.mobile-quotes {
+    display: none;
+}
+
+/* ! ========== Early access ========== ! */
 
 .early-access {
     display: inline-block;
@@ -297,8 +309,9 @@ input {
   ! =============== */
 
 .footer-bg {
-    height: 50px;
-    margin-top: -80px;
+    height: 250px;
+    margin-top: -100px;
+    margin-bottom: -30px;
     background-color: hsl(216, 53%, 9%);
 }
 
@@ -323,7 +336,7 @@ footer {
 }
 
 footer .logo {
-    margin-top: 100px;
+    margin-top: -60px;
 }
 
 .location,
@@ -366,7 +379,7 @@ li:hover, .icon i:hover {
 .location::before {
     content: url('../images/icon-location.svg');
     margin-right: 20px;
-    margin-left: -32px;
+
 }
 
 .notification {
